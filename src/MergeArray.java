@@ -1,11 +1,11 @@
 public class MergeArray {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5};
-        int[] arr1 = {-3,0,9};
+        int[] arr1 = {0,3,9};
         int[] result = mergeDistinct(arr, arr1);
         int i = 0;
         do {
-            System.out.println(result[i]);
+            System.out.print(result[i] + ", ");
             i++;
         } while (i < result.length && result[i] > result[i -1]);
     }
